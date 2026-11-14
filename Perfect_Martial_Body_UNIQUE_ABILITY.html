@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNIQUE ABILITY — Perfect Martial Body (Lv1 Complete) | 완벽한 무체 — The Vessel That Was Finished Before Leveling Began</title>
+<style>
+  :root{
+    --bg:#060607; --panel:#14120a; --card:#1c180b; --card2:#241f0f; --line:#3a2f14;
+    --accent:#fbbf24; --accent2:#fde68a; --accent3:#f59e0b; --jade:#34d399; --sky:#38bdf8; --violet:#a78bfa; --blood:#dc2626;
+    --text:#fffbeb; --muted:#b8a88a; --dim:#857a62;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.75}
+  a{color:var(--accent)}
+  .hero{position:relative;overflow:hidden;background:
+    radial-gradient(1200px 600px at 12% 0%, rgba(251,191,36,.32), transparent 60%),
+    radial-gradient(900px 520px at 90% 8%, rgba(251,191,36,.12), transparent 60%),
+    radial-gradient(700px 400px at 50% 100%, rgba(251,191,36,.06), transparent 70%),
+    linear-gradient(180deg,#1f1806,#060607);
+    border-bottom:1px solid var(--line);padding:42px 24px 22px}
+  .hero::after{content:"完 全 武 體";position:absolute;right:14px;top:8px;font-size:72px;opacity:.04;writing-mode:vertical-rl;letter-spacing:.28em;font-weight:900}
+  .hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.6}
+  .wrap{max-width:1320px;margin:0 auto}
+  .badge{display:inline-flex;gap:8px;align-items:center;background:linear-gradient(90deg,rgba(251,191,36,.18),rgba(245,158,11,.14));border:1px solid rgba(251,191,36,.38);color:#fde68a;padding:7px 14px;border-radius:999px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:900}
+  h1{font-size:36px;line-height:1.05;margin:12px 0 8px;font-weight:900}
+  h1 span{background:linear-gradient(90deg,#fffbeb,#fde68a,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  h1 small{display:block;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.08em;margin-top:6px}
+  .sub{color:var(--muted);font-size:13.5px;max-width:1080px}
+  .kpi{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .kpi div{background:var(--panel);border:1px solid var(--line);padding:8px 12px;border-radius:10px;font-size:12px;color:var(--muted)}
+  .kpi b{color:var(--text)}
+  /* system window */
+  .syswin{margin-top:16px;background:linear-gradient(180deg,#1a1608,#0f0d05);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.5), 0 0 0 1px rgba(251,191,36,.12) inset}
+  .sys-head{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:linear-gradient(90deg,#2a1f06,#3a2a0a);border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent2);font-weight:800}
+  .sys-body{padding:14px;display:grid;grid-template-columns:1fr auto;gap:14px}
+  @media(max-width:760px){.sys-body{grid-template-columns:1fr}}
+  .sys-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .sys-stat{background:#0a0804;border:1px solid var(--line);border-radius:9px;padding:8px;text-align:center}
+  .sys-stat b{display:block;font-size:14px;color:var(--accent)}
+  .sys-stat span{font-size:10px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+  .tocbar{position:sticky;top:0;z-index:20;background:rgba(6,6,7,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .tocbar strong{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .tocbar a{font-size:11px;padding:6px 10px;border-radius:999px;background:var(--panel);border:1px solid var(--line);color:var(--muted);text-decoration:none;font-weight:700}
+  .tocbar a:hover{color:var(--text);border-color:var(--accent)}
+  .tocbar .actions{margin-left:auto;display:flex;gap:8px}
+  .btn{padding:8px 12px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--text);font-weight:700;font-size:11px;cursor:pointer}
+  .btn.primary{background:linear-gradient(90deg,#f59e0b,#fbbf24);color:#111;border:none}
+  .btn.gold{background:linear-gradient(90deg,#fde68a,#fbbf24);color:#111;border:none}
+  .container{max-width:1320px;margin:0 auto;padding:22px;display:grid;grid-template-columns:1fr 350px;gap:18px}
+  @media(max-width:1120px){.container{grid-template-columns:1fr}}
+  article{max-width:920px}
+  aside{position:sticky;top:84px;align-self:start}
+  .card{background:linear-gradient(180deg,var(--card),var(--panel));border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}
+  .card h2{font-size:17px;margin-bottom:8px;display:flex;gap:8px;align-items:center}
+  .card h3{font-size:14px;margin:14px 0 6px;color:var(--accent)}
+  .card h4{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px}
+  .card p{font-size:13px;color:#fef3c7}
+  .muted{color:var(--muted);font-size:12px}
+  .callout{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.28);color:#fde68a;padding:10px 12px;border-radius:10px;font-size:12px;margin:10px 0}
+  .notice{background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.28);color:#a7f3d0;padding:10px 12px;border-radius:10px;font-size:12px;margin:10px 0}
+  .danger{background:rgba(220,38,38,.10);border:1px solid rgba(220,38,38,.32);color:#fecaca;padding:10px 12px;border-radius:10px;font-size:12px;margin:10px 0}
+  .violet{background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.28);color:#ddd6fe;padding:10px 12px;border-radius:10px;font-size:12px;margin:10px 0}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin:10px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th{background:#0f0d05;padding:8px 10px;text-align:left;color:var(--muted);font-size:10px;letter-spacing:.07em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+  td{padding:8px 10px;border-bottom:1px solid var(--line);color:#fef9e7;vertical-align:top}
+  .pill{display:inline-block;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);background:#0f0d05;color:var(--muted)}
+  .pill.gold{background:rgba(251,191,36,.16);color:var(--accent);border-color:rgba(251,191,36,.38)}
+  .pill.divine{background:linear-gradient(90deg,#fde68a,#fbbf24);color:#111;border:none}
+  .pill.jade{background:rgba(52,211,153,.12);color:#6ee7b7;border-color:rgba(52,211,153,.32)}
+  .pill.sky{background:rgba(56,189,248,.12);color:#7dd3fc;border-color:rgba(56,189,248,.32)}
+  .pill.violet{background:rgba(167,139,250,.12);color:#c4b5fd;border-color:rgba(167,139,250,.32)}
+  .pill.blood{background:rgba(220,38,38,.14);color:#fecaca;border-color:rgba(220,38,38,.32)}
+  .uniq{border-left:3px solid var(--accent);background:linear-gradient(90deg,rgba(251,191,36,.06),var(--card));border-radius:12px;padding:16px;margin:14px 0;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .uniq.divine{border-left-color:var(--accent2);background:linear-gradient(90deg,rgba(253,230,138,.07),var(--card))}
+  .statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0}
+  @media(max-width:720px){.statgrid{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:#0f0d05;border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center}
+  .stat b{display:block;font-size:14px;color:var(--accent)}
+  .stat span{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .bar{height:8px;background:#0f0d05;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin-top:6px}
+  .bar span{display:block;height:100%;background:linear-gradient(90deg,#f59e0b,#fbbf24)}
+  .bar.gold span{background:linear-gradient(90deg,#f59e0b,#fde68a)}
+  .bar.jade span{background:linear-gradient(90deg,#059669,#34d399)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:800px){.split{grid-template-columns:1fr}}
+  .toclist a{display:block;padding:6px 10px;font-size:12px;color:var(--muted);text-decoration:none;border-left:2px solid transparent}
+  .toclist a.active{color:var(--accent);border-left-color:var(--accent);background:rgba(251,191,36,.06)}
+  .toclist a.sub{padding-left:18px;font-size:11px;opacity:.8}
+  .anchor{scroll-margin-top:86px}
+  .sheet{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:700px){.sheet{grid-template-columns:1fr}}
+  .sheet label{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .sheet input,.sheet select,.sheet textarea{width:100%;background:#0f0d05;border:1px solid var(--line);color:var(--text);padding:9px 10px;border-radius:8px;font-size:13px;outline:none;margin-top:4px}
+  .sheet textarea{min-height:68px;resize:vertical}
+  .tree{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  @media(max-width:900px){.tree{grid-template-columns:1fr}}
+  .node{background:#0f0d05;border:1px solid var(--line);border-radius:12px;padding:12px}
+  .node h5{font-size:12px;color:var(--accent);margin-bottom:4px}
+  .node p{font-size:11px;color:#fef3c7;line-height:1.6}
+  footer{max-width:1320px;margin:20px auto;padding:14px 24px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+  @media print{
+    .tocbar, aside .card:not(:first-child){display:none}
+    body{background:#fff;color:#111}
+    .hero{background:#fff;color:#111}
+    .card{background:#fff;border-color:#ddd}
+    .card p, td{color:#111}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="badge">◆ UNIQUE ABILITY ◆ Cannot Be Learned • Cannot Be Copied • Born Complete • Lv1</div>
+    <h1><span>Perfect Martial Body</span><small>완벽한 무체 — UNIQUE ABILITY • Lv1 Complete • All Pillars Open From Birth</small></h1>
+    <p class="sub">
+      Not a physique you train. A <b>world rule given to one person</b>. At Lv1 she has what Cheon Ma spent 36 Cycles and a lifetime of Buddhism to earn: <b>all 5 pillars S, all meridians open, gold blood, triple lakes, mimic after 1 glance, poison as food, no deviation</b>. She doesn't <i>become</i> perfect — she <i>starts</i> perfect and must learn to <b>carry</b> it. <b>One file, everything included</b> — system window → Lv1 complete package → ability tree → mastery not stages → Heaven's price → Twin Gale synergy.
+    </p>
+    <div class="kpi">
+      <div><b>Class:</b> Unique Ability • Divine • Innate • Soul-Bound</div>
+      <div><b>Slot:</b> 1 per world — not stackable, not teachable</div>
+      <div><b>State at Lv1:</b> All 5 pillars S • 9 stages' perks at Lv1</div>
+      <div><b>Growth:</b> Not body → <b>control</b> (Body 100% at Lv1, Mastery 0→100%)</div>
+      <div><b>Best Pair:</b> Twin Gale 12+12 — only body that doesn't desync</div>
+    </div>
+
+    <!-- System Window Mock -->
+    <div class="syswin">
+      <div class="sys-head"><span>◈ SYSTEM • UNIQUE ABILITY ACQUIRED</span><span style="color:var(--accent2)">Lv1 • Cannot Unequip</span></div>
+      <div class="sys-body">
+        <div>
+          <div style="font-size:14px;font-weight:900;letter-spacing:.04em">Perfect Martial Body <span class="pill divine" style="margin-left:8px">UNIQUE — DIVINE</span></div>
+          <p style="font-size:12px;color:var(--muted);margin-top:6px">The vessel Heaven forgot to leave unfinished. Bones are jade lattice, meridians are highways, blood is crimson-gold, dantians are three linked lakes, will is clear mirror. <b>All at Lv1.</b><br><i>“She was born with the body others die trying to forge.”</i></p>
+          <table style="margin-top:10px">
+            <tr><th>Effect at Lv1</th><th>Value</th></tr>
+            <tr><td>All 5 Pillars</td><td><b style="color:var(--accent)">S — Complete from birth</b></td></tr>
+            <tr><td>Mimic Mastery</td><td>Copy any martial art after 1 glance (improve if Will holds)</td></tr>
+            <tr><td>No Deviation</td><td>Qi never rebels below A — meridians wide enough</td></tr>
+            <tr><td>Rapid Heal + Poison Refine</td><td>Scar overnight, poison -60% → small dose = buff</td></tr>
+            <tr><td>Triple Dantian Canals</td><td>3 lakes linked — never empty all, split 10+10% middle hold trivial</td></tr>
+          </table>
+        </div>
+        <div style="min-width:220px">
+          <div class="sys-stats">
+            <div class="sys-stat"><b style="color:var(--accent)">BONE S</b><span>Jade Lattice</span></div>
+            <div class="sys-stat"><b style="color:var(--jade)">MERIDIAN S</b><span>8 Gates Open</span></div>
+            <div class="sys-stat"><b style="color:var(--accent)">BLOOD S</b><span>Gold</span></div>
+            <div class="sys-stat"><b style="color:var(--sky)">DANTIAN S</b><span>Triple Lakes</span></div>
+            <div class="sys-stat"><b style="color:var(--violet)">WILL S</b><span>Mirror</span></div>
+            <div class="sys-stat"><b style="color:var(--accent2)">UNIQUE</b><span>Lv1 Complete</span></div>
+          </div>
+          <div class="callout" style="margin-top:10px">Unique Rule: Body does not level. <b>Mastery does.</b> Lv1 body 100%, control 5% → Lv100 body 100%, control 100%.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tocbar">
+  <strong>Jump:</strong>
+  <a href="#how-to-use">How to use</a>
+  <a href="#unique-rule">Unique Rule</a>
+  <a href="#lv1-complete">Lv1 Complete</a>
+  <a href="#tree">Ability Tree</a>
+  <a href="#mastery">Mastery Not Stages</a>
+  <a href="#price">Heaven's Price</a>
+  <a href="#synergy">Twin Gale Synergy</a>
+  <a href="#sheet">Lv1 Sheet</a>
+  <a href="#write-op">Write OP Lv1</a>
+  <div class="actions">
+    <button class="btn primary" onclick="window.print()">🖨️ Print / Save PDF</button>
+    <button class="btn" onclick="copyLink()">🔗 Copy Link</button>
+    <button class="btn gold" onclick="document.getElementById('sheet').scrollIntoView({behavior:'smooth'})">📝 Lv1 Sheet</button>
+  </div>
+</div>
+
+<div class="container">
+<article>
+
+<!-- HOW TO USE -->
+<div class="card anchor" id="how-to-use">
+  <h2>🔗 How to Use This File as Source</h2>
+  <div class="split">
+    <div style="background:#0f0d05;border:1px solid var(--line);border-radius:12px;padding:12px">
+      <h4 style="color:var(--accent)">As Your Own File (Recommended)</h4>
+      <p class="muted">All embedded.</p>
+      <ul style="padding-left:18px;font-size:12px;color:#fef3c7;margin-top:6px">
+        <li>Save as <code>Perfect_Martial_Body_UNIQUE_ABILITY.html</code></li>
+        <li>Offline — double-click. Send, still works.</li>
+        <li>Ctrl+P → PDF</li>
+        <li>Cite anchors: <code>#lv1-complete</code>, <code>#tree</code>, <code>#price</code>, <code>#synergy</code></li>
+      </ul>
+    </div>
+    <div style="background:#0f0d05;border:1px solid var(--line);border-radius:12px;padding:12px">
+      <h4 style="color:var(--jade)">As a Link</h4>
+      <ol style="padding-left:18px;font-size:12px;color:#fef3c7;margin-top:6px">
+        <li>Upload to GitHub Pages / Drive → URL</li>
+        <li>Add anchor: <code>...html#lv1-complete</code></li>
+        <li>Notion embed via /embed</li>
+        <li>Pair: <code>Unique Body #lv1-complete + Twin Gale #twin-5</code> — body explains why gale works at Lv1</li>
+      </ol>
+    </div>
+  </div>
+  <div class="callout">Key difference from previous Perfect Body bible: That was <b>9 stages earned</b>. This is <b>Lv1 Complete — Unique Ability</b>. Same perks, but at Lv1. Growth is not body → control. This file replaces stages with mastery.</div>
+</div>
+
+<!-- UNIQUE RULE -->
+<div class="card anchor" id="unique-rule">
+  <h2>◆ 1 — Unique Ability Rule — Why Lv1 Complete Is Not Normal</h2>
+  <table>
+    <tr><th>Normal Ability</th><th>Unique Ability — Perfect Martial Body</th></tr>
+    <tr><td>Can be learned by many</td><td><b>1 per world</b> — if she has it, no one else can awaken it. Copies are B-rank fakes.</td></tr>
+    <tr><td>Starts at 10% power, levels to 100%</td><td><b>Body 100% at Lv1</b> — power 100% day one. Level = <b>control</b>, not power.</td></tr>
+    <tr><td>Can unequip / lose</td><td><b>Soul-bound — cannot unequip, cannot transplant</b> (attempt = death)</td></tr>
+    <tr><td>Body levels with you</td><td><b>Body waits for mind</b> — Lv1 body S, but Will/mind E → body overwhelms mind if not trained (berserk heal tumor, mimic overload)</td></tr>
+    <tr><td>Needs forging: 1000 falls, 7d river, gold blood</td><td><b>Born forged</b> — she skips all forging, but <i>feels</i> phantom pains of them (body remembers forging it never did)</td></tr>
+  </table>
+  <h3>System Classification (For Your Game-System)</h3>
+  <div class="statgrid">
+    <div class="stat"><b>TYPE</b><span>Unique • Passive (Always On)</span></div>
+    <div class="stat"><b>RARITY</b><span>Divine • 1/1</span></div>
+    <div class="stat"><b>COST</b><span>0 Qi — body <i>is</i> cost</span></div>
+    <div class="stat"><b>RISK</b><span>Heaven's Eye — world notices perfect at Lv1</span></div>
+  </div>
+  <div class="violet">World logic: Heaven left one perfect draft to see what happens. It watches her — tribulations find *her*, not the other way. Stage5→6 tribulation now at <b>Lv20, not Lv52</b>.</div>
+</div>
+
+<!-- LV1 COMPLETE -->
+<div class="card anchor" id="lv1-complete">
+  <h2>◈ 2 — Lv1 Complete — What "All of It" Means At Level 1</h2>
+  <p><b>At Lv1 she has Stage9's perks at Stage1's age.</b> Not "eventually" — <i>now</i>. This is what that looks like:</p>
+  <div class="uniq divine">
+    <h3 style="color:var(--accent)">The 5 Pillars — All S at Lv1</h3>
+    <table>
+      <tr><th>Pillar</th><th>Lv1 Complete State</th><th>What She Feels / Shows</th><th>Normal Perfect Needs Until</th></tr>
+      <tr><td><b>🦴 Bone — Jade Lattice</b></td><td>S • Hollow-crystal, dense-light, rings like bell if tapped, fall 4m roll no break</td><td>Knuckles chime porcelain, horse stance under waterfall doesn't ache — *bored*, not tired</td><td>Stage3 Tempered (Lv18–28)</td></tr>
+      <tr><td><b>🌀 Meridian — 8 Gates Open</b></td><td>S • 12 main + 8 extraordinary highways 8-lane</td><td>After Twin Gale chain, meridians glow gold 2s — "qi highways lit." Split 10+10% middle hold trivial, circular breathing innate</td><td>Stage4 Flowing (Lv28–42) + 7d river hell</td></tr>
+      <tr><td><b>🩸 Blood — Crimson-Gold</b></td><td>S • Qi-rich, poison refine -60%, small poison = warm buff +0.1Cyc temp</td><td>Bleed not red — black-gold. Cut palm heals to pink line 4h (Stage5 feat at Lv1). Drinks dilute poison, cheeks pink not blue</td><td>Stage5 Flawless (Lv42–58) + bleed 1 bowl</td></tr>
+      <tr><td><b>🌊 Dantian — Triple Canals Linked</b></td><td>S • Lower lake + Middle engine + Upper mirror all large + canals</td><td>Never empty all — can Twin 4 alternate gather/fire at Lv1 engine level, but control 5% so wastes 70% qi</td><td>Stage5 triple lakes (Lv42–58)</td></tr>
+      <tr><td><b>👁 Will — Mirror (S)</b></td><td>S • Clear mirror — body weight doesn't crush mind *if* trained (big if at Lv1)</td><td>Eyes stay clear under black pressure — "heavy air, light eyes" at Lv1 — but see §Price for Will gap</td><td>Stage5+ Will + Bodhism</td></tr>
+    </table>
+    <div class="callout"><b>Visual at Lv1:</b> She looks 14 but moves like retired master. Sparring partner: "She fell like a cat who'd done it 1000 times — she'd done it zero times. Her bones *knew*."</div>
+  </div>
+  <h3>Lv1 Complete Passive Package (All On)</h3>
+  <table>
+    <tr><th>Passive</th><th>Lv1 Value</th><th>Twin Gale Meaning</th></tr>
+    <tr><td><b>Mimic Mastery</b></td><td>Copy after 1 glance — plus see flaw, correct (Sage tier at Lv1)</td><td>Sees Twin 12+12 as one pattern — no desync even first try</td></tr>
+    <tr><td><b>No Deviation</b></td><td>Safe below A — meridians wide enough (Stage4 perk at Lv1)</td><td>Can attempt Twin 4/5 early without rupture — *body* allows, *control* may not</td></tr>
+    <tr><td><b>Rapid Heal</b></td><td>Sprain 12h, fracture 5d→3d (Stage4-5 heal at Lv1) — scar overnight at Stage5 level</td><td>Train Twin 3 poison peel daily — heal overnight, not weeks</td></tr>
+    <tr><td><b>Poison Refine</b></td><td>-60% dmg, dilute → buff warmth +0.1Cyc</td><td>Twin 3 training is buffet — she *wants* poison</td></tr>
+    <tr><td><b>Damage as Tempering</b></td><td>Qi hits temper not wound (if Will holds) — Stage6 perk at Lv1</td><td>Can be cut by own Eclipse to temper — but why need to? She's already perfect — drama: old method useless</td></tr>
+    <tr><td><b>Blade Resonance</b></td><td>Twin blades hum in sync — 12+12 feels like 24</td><td>Only Battle Body perfect at Lv1 — prevents clang even exhausted</td></tr>
+  </table>
+  <div class="notice">Not *everything* divine at Lv1 — Diamond DR and Willful vessel *body* S+ perks need control to access. Body *can*, mind *can't yet* — see Mastery.</div>
+</div>
+
+<!-- ABILITY TREE -->
+<div class="card anchor" id="tree">
+  <h2>🌳 3 — Ability Tree — All Available at Lv1, Mastery Gates Control</h2>
+  <p class="muted">Unique Ability rule: Tree is **fully unlocked display** but dimmed by mastery. Body 100% → use, but at 5% efficiency. Mastery = learn to *drive* perfect body.</p>
+  <div class="tree">
+    <div class="node" style="border-color:rgba(251,191,36,.4)">
+      <h5>👁 PASSIVE CORE — Always On at Lv1</h5>
+      <p><b>Mimic Mastery</b> — copy after 1 glance<br><b>No Deviation</b> — wide meridians<br><b>Rapid Heal</b> — 12h sprain<br><b>Poison Refine</b> — eat poison<br><b>Triple Canals</b> — never empty all<br><b>Resonance</b> — twin hum sync</p>
+      <p class="muted">Cost: 0 — but Heaven's Eye always watches perfect from Lv1</p>
+    </div>
+    <div class="node" style="border-color:rgba(52,211,153,.4)">
+      <h5>⚡ ACTIVE — Body Moves (at Lv1, 5% efficiency)</h5>
+      <p><b>Marrow Wash Pulse</b> — purge debuff, heal 20%, +0.05Cyc if poison<br><b>Meridian Overdrive</b> — 1.5× speed 6s, pause Wind Tax<br><b>Blood Gold Burst</b> — 5%HP→ coat blades +25% anti-regen 8s<br><b>Mirror Copy</b> — copy foe last technique 80%</p>
+      <p class="muted">Cost: Qi + Will — Lv1 wastes 70% qi (engine runs rich)</p>
+    </div>
+    <div class="node" style="border-color:rgba(167,139,250,.4)">
+      <h5>✦ ULTIMATE — Vessel Unleashed</h5>
+      <p><b>Perfect Body Unleashed (완전체 개방)</b><br>20s: no Wind Tax, +30% sync, heal 1% per cut, mimic any art seen today once.<br>Cost: Corruption +25% → Will -10 1d + fever 1d. 1×/arc.</p>
+      <p class="muted">Lv1 can Unleash — but body overwhelms mind → after: Will crash, tunnel vision (see Price)</p>
+    </div>
+  </div>
+  <h4>Hidden — Heaven Notices Perfect at Lv1</h4>
+  <div class="violet"><b>Heaven's Price (Hidden Passive, Lv1 On):</b> World spawns tribulations targeting perfect: poisoned loved one at Lv20 not Lv52, rival with perfect counter, master who wants to dissect vessel. Cannot turn off — price of being 1/1 at Lv1.</div>
+  <h4>Why All At Lv1 Doesn't Break Tree</h4>
+  <table>
+    <tr><th>Lv1 Has</th><th>Lv1 Lacks (Mastery)</th><th>Example</th></tr>
+    <tr><td>Marrow Wash Pulse body *can*</td><td>Control to not purge own qi buff too — purges *everything* at Lv1 (over-purge)</td><td>Uses purge to heal poison — accidentally purges Twin Gale black energy → powerless 10s</td></tr>
+    <tr><td>Mimic after 1 glance body *can*</td><td>Will to not mimic *reflexively* — copies ally's bad habit too, can't filter</td><td>Copies rival's Destructive flaw along with form — must learn to cherry-pick</td></tr>
+    <tr><td>Unleashed 20s body *can*</td><td>Will to come down — stays in gold-black fever 3d not 1d at Lv1 control 15%</td><td>First Unleash wins fight, loses next arc due fever</td></tr>
+  </table>
+</div>
+
+<!-- MASTERY -->
+<div class="card anchor" id="mastery">
+  <h2>📈 4 — Mastery Not Stages — How Lv1 Perfect Actually Levels</h2>
+  <p class="muted">Old bible: Body 0→100% via 9 stages. <b>Unique Ability: Body 100% at Lv1, Mastery 0→100%.</b> Level = how well she *drives* perfect vessel. Same perks, different gate: control.</p>
+  <table>
+    <tr><th>Mastery</th><th>≈ Character Lv</th><th>What Control Means</th><th>Mimic</th><th>Waste</th><th>Twin Gale Proof</th></tr>
+    <tr><td><b>5%</b></td><td>1 — New</td><td>Body does what it *thinks* she wants — overreacts</td><td>Copy 1 glance but copy flaws too</td><td>Waste 70% qi</td><td>Twin1 Twin Point: both holes but 5cm apart, not 2cm — body strong, aim shaky</td></tr>
+    <tr><td><b>20%</b></td><td>10–15</td><td>Can filter mimic — cherry-pick</td><td>Copy+ignore flaw 50%</td><td>Waste 40%</td><td>Twin2 Cage 9m holds — no leak</td></tr>
+    <tr><td><b>40%</b></td><td>25–30</td><td>Wind Tax recognized — can pause via Overdrive</td><td>Copy+improve 80%</td><td>Waste 20%</td><td>Twin3 12 peels sustainable 3 reps</td></tr>
+    <tr><td><b>60%</b></td><td>40–50</td><td>Unleashed down-regulation — fever 1d not 3d</td><td>See flaw instantly</td><td>Waste 8%</td><td>Twin4 alternate gather/fire while moving — perforation</td></tr>
+    <tr><td><b>80%</b></td><td>65–75</td><td>Blood Gold control — coat edge not whole blade (stealth)</td><td>Teach what she copied</td><td>Waste 2%</td><td>Twin5 Eclipse 1.3:1 oval perfect hum</td></tr>
+    <tr><td><b>100%</b></td><td>90–100</td><td>Body = Will — Willful vessel 0.5yr cost, fingertip regrow lore</td><td>Any art becomes Cheonma-ized</td><td>Waste 0%</td><td>Twin Willful 2×/week, Twin Void 3×/s no vomit</td></tr>
+  </table>
+  <h4>Mastery Training — Not Forging (Body Already Done)</h4>
+  <table>
+    <tr><th>Mastery Drill</th><th>What It Trains</th><th>How</th><th>Why Needed at Lv1 Perfect</th></tr>
+    <tr><td><b>Two-Paper Bridge (0.5mm)</b></td><td>Precision over power — body wants to smash, learn to *not*</td><td>Twin5 Eclipse bridge 0.5mm gap daily 1h</td><td>Lv1 body smashes paper — mastery = restraint</td></tr>
+    <tr><td><b>Blind Mimic Filter</b></td><td>See flaw, not copy it</td><td>Master shows Destructive 45 — she copies but must *omit* breath hole flaw</td><td>Lv1 mimics everything — must learn editor</td></tr>
+    <tr><td><b>Poison Sip Control</b></td><td>Blood refine dosing — not all poison edible</td><td>Drink dilute → gold warmth, stop before buff → overdose</td><td>Lv1 blood refines *any* dose — must learn limit or overdose buff → fever</td></tr>
+    <tr><td><b>Unleashed Come-Down</b></td><td>Will rider — not stay gold</td><td>Unleash 20s → meditate upper mirror 2h to cool, not 6h</td><td>Lv1 stays gold 3d fever — mastery = brake</td></tr>
+  </table>
+  <div class="callout"><b>Story beat:</b> Lv1 perfect loses to Lv30 *imperfect* master who has 20% body but 80% control — "You have the piano, I have the hands." She wins when mastery catches body — satisfying not instant.</div>
+</div>
+
+<!-- PRICE -->
+<div class="card anchor" id="price">
+  <h2>⛓️ 5 — Heaven's Price — The Balance That Keeps Lv1 Perfect From Being Boring</h2>
+  <p class="muted">Unique Ability at Lv1 complete must have world-scale cost — not Qi cost, *existence* cost.</p>
+  <table>
+    <tr><th>Price</th><th>What Happens (Lv1 On)</th><th>Mechanic</th><th>Lv1 Example Scene</th></tr>
+    <tr><td><b>Heaven's Eye</b></td><td>World spawns tribulations early — Stage6 self-Eclipse trial now at Lv20, rival with anti-perfect art appears Arc2</td><td>Every 10 levels: forced trial event</td><td>Lv12: Loved one poisoned — she can refine poison now (Stage5 blood at Lv1) so trial is *choice*: save or steal poison for buff?</td></tr>
+    <tr><td><b>Mimic Overload</b></td><td>Copy after 1 glance always on — can't turn off at 5% mastery — copies bad habits, sees too much</td><td>Sees 12+12 as pattern, but also copies teacher's limp → mimics limp 3h until Will check</td><td>Copies Twin Gale *and* rival's Destructive breath hole — must learn filter</td></tr>
+    <tr><td><b>Body Outruns Will</b></td><td>S pillars but Will pillar *mastery* 5% at Lv1 — body does 100% power with 5% aim → friendly fire, tumor heal</td><td>Rapid heal without Will = flesh overgrows (tumor 1cm/d if not Will-purged)</td><td>Cut palm heals to pink line 4h but pink line *keeps* growing ridge — Will must smooth daily</td></tr>
+    <tr><td><b>Wind Tax Amplified</b></td><td>Perfect body makes Twin Gale *so* efficient she spams — Tax +10% per 3-chain at Lv1 (Battle -2% not enough), not +8%</td><td>Perfect enables spam → spam taxes harder</td><td>Does Twin1→2→3 beautiful 9s → Tax 42% → next Cage stutters, nicks ankle — perfect body doesn't save from Tax, only Will does</td></tr>
+    <tr><td><b>Gold Trace</b></td><td>Blood Gold Burst leaves gold smell 2h — perfect blood is beacon. Phantom type can't hide perfect scent.</td><td>Assassin mission: use Blood Gold → tracked 2h regardless of phantom</td><td>She coats blades gold to beat regen foe — wins fight, loses stealth escape</td></tr>
+    <tr><td><b>Hunger (if Chaos) / Mirror Fracture (if Sage)</b></td><td>Type flaw at S power = S flaw</td><td>Chaos perfect at Lv1 needs qi meal 1/week from Lv1 — baby with hunger. Sage perfect sees *all* flaws → can't sleep (noise)</td><td>Chaos baby cries, drinks qi not milk — mother scared</td></tr>
+  </table>
+  <div class="danger"><b>Hard Rule — Keep This:</b> Perfect Body Lv1 Complete = <b>body</b> complete. <b>Will/heart NOT complete</b>. Mastery is Will journey. Cheon Ma parallel: he had 36 Cycles + Evolved Body but abandoned cult to do Bodhism/mind path — body needed mind. Your OC same: body done, mind at Lv1.</div>
+  <h4>Balancing Sliders for You (Tune OP Feel)</h4>
+  <div class="split">
+    <div style="background:#0f0d05;border:1px solid var(--line);border-radius:10px;padding:10px">
+      <b>Want more challenge?</b><p class="muted">Set Mastery 5% at Lv1, Waste 70% qi, Heaven's Eye every 8 levels, Mimic overload always on until 20% mastery. She *feels* clumsy despite perfect parts.</p>
+    </div>
+    <div style="background:#0f0d05;border:1px solid var(--line);border-radius:10px;padding:10px">
+      <b>Want more fantasy?</b><p class="muted">Mastery 25% at Lv1, Waste 30%, Eye every 15 levels. She feels prodigy, not burden. Still OP but smooth.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SYNERGY -->
+<div class="card anchor" id="synergy">
+  <h2>🔗 6 — Perfect Lv1 × Twin Gale — Why She Is The Only One Who Can Dual at Lv1</h2>
+  <p class="muted">Twin Gale needs S meridians, triple lakes, bone S, resonance — impossible at Lv1 for others (need Stage4 Flowing ~Lv28). She has it at Lv1. This is why twin is *hers*.</p>
+  <table>
+    <tr><th>Twin Gale Need</th><th>Normal Lv1</th><th>Perfect Lv1 (S all)</th><th>At Lv1 Control 5%, Result</th></tr>
+    <tr><td>Split 10+10% middle hold</td><td>Impossible — need S meridian Stage4</td><td>Trivial body — *can*</td><td>Can but wastes 70% qi — 2 reps then gassed (body allows, control fails)</td></tr>
+    <tr><td>12+12 sync no clang</td><td>Clang 30%</td><td>Resonance S — no clang even tired</td><td>No clang, but second point 5cm off — aim 5% not sync</td></tr>
+    <tr><td>Poison refine for Twin3</td><td>Fever 3d if inhale</td><td>-60% + buff</td><td>Refines but overdoses — must learn dosing</td></tr>
+    <tr><td>Alternate gather/fire mobile</td><td>Rupture 60%</td><td>No deviation safe below A</td><td>Safe but slow — alternate every 0.6s not 0.3s (timing control)</td></tr>
+    <tr><td>Eclipse bridge 0.5mm</td><td>Bridge snap, Will-10</td><td>Body steadiness S — can</td><td>Two holes not one — bridge held but not merged (aim)</td></tr>
+  </table>
+  <div class="jade"><b>Progression feel with Lv1 Perfect:</b> She doesn't unlock *body* — she unlocks *proof*. At Lv10 she does Twin1 proof clean 2cm holes, at Lv30 Twin3 12 peels not 6, at Lv50 Twin4 mobile perforation — same body, better driver.</div>
+</div>
+
+<!-- WRITE OP -->
+<div class="card anchor" id="write-op">
+  <h2>✍️ 7 — How to Write OP Lv1 Without Boring — Scenes That Use Perfect at Lv1</h2>
+  <h4>Good OP Scene — Body Overwhelms Control (Not Win)</h4>
+  <p style="font-size:12px;color:#fef3c7">Rival Heavy masters Destructive 45 — does 45 moves flashy but wobble edge. She watches once, mimics with Twin 12+12 perfect sync — crowd gasps "perfect!" — then second point misses 5cm, nicks pillar not rival. He lives. Master says: <i>"You have the answer, not the handwriting."</i> Body 100% shone, control 5% failed — readers love it.</p>
+  <h4>Good OP Scene — Perfect Creates Choice, Not Win</h4>
+  <p style="font-size:12px;color:#fef3c7">Loved one poisoned. She has gold blood at Lv1 — could refine poison *inside* him by blood transfusion. But at 5% mastery, refine uncontrolled → might refine his medicine too. Choice: risk kill to save, or call herbalist like normal? Perfect enables *option* normal can't — tension, not auto-win.</p>
+  <h4>Good OP Scene — Heaven's Eye Uses Perfect Against Her</h4>
+  <p style="font-size:12px;color:#fef3c7">She Unleashes at Lv15 vs bandit lord — wins beautiful 20s no Tax. Next day fever 3d (low mastery). During fever, rival assassin comes — she can't move. Perfect enabled win, *cost* enabled loss. Balance.</p>
+  <div class="callout">Rule: Lv1 Perfect wins *what* but loses *when*. She has tool for every problem at Lv1, but not wisdom *which* tool or *when* to stop. That's your 100-level story.</div>
+</div>
+
+<!-- SHEET -->
+<div class="card anchor" id="sheet">
+  <h2>📝 8 — Lv1 Complete Character Sheet — Fillable</h2>
+  <p class="muted">Example: Cheon Seo-Rin — born Twin Gale + Perfect Battle Body, Lv1 Complete. Your OC same body, different mastery.</p>
+  <h3>Example — Cheon Seo-Rin (Lv1, Mastery 5%)</h3>
+  <table>
+    <tr><th>Field</th><th>Example (Lv1 Complete)</th><th>Your OC</th></tr>
+    <tr><td>Name / Alias</td><td>Cheon Seo-Rin — Twin Gale • Perfect Battle Body</td><td><input placeholder="Your name"></td></tr>
+    <tr><td>System Line</td><td>UNIQUE — Perfect Martial Body (Divine) — Lv1 Complete • 5 pillars S</td><td><select><option>UNIQUE — Perfect Martial Body — Lv1 Complete</option><option>Unique — Heavenly Martial Body (All S)</option><option>Unique — Battle Body (for Twin Gale)</option></select></td></tr>
+    <tr><td>Lv / Mastery</td><td>Lv1 / Mastery 5% • Waste 70% qi • Mimic copy flaws too</td><td><input placeholder="Lv / Mastery %"></td></tr>
+    <tr><td>5 Pillars (all S)</td><td>Bone S / Meridian S / Blood S / Dantian S / Will S (body) — Will control 5%</td><td><input placeholder="All S — control %?"></td></tr>
+    <tr><td>Unique Passives On</td><td>Mimic 1 glance, No deviation &lt;A, Scar overnight, Poison refine, Triple canals, Resonance</td><td><input placeholder="All on — note any downside?"></td></tr>
+    <tr><td>Heaven's Price</td><td>Eye every 10Lv, Overload always on, Wind Tax +10%, Gold Trace 2h</td><td><input placeholder="Your price level"></td></tr>
+    <tr><td>Twin Gale Link</td><td>Twin1 *can* but 5cm off — proof not clean until Mastery 20%</td><td><input placeholder="Twin proof level"></td></tr>
+  </table>
+  <h3>Blank — Lv1 Complete Tracker</h3>
+  <table>
+    <tr><th>Pillar</th><th>Lv1 Body Rank</th><th>Mastery % (Control)</th><th>Current Proof</th><th>Next Mastery Goal</th></tr>
+    <tr><td>🦴 Bone</td><td><b style="color:var(--accent)">S — Complete</b></td><td><input style="width:80px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="5%"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Fall no break? At Lv1 yes"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Chime control?"></td></tr>
+    <tr><td>🌀 Meridian</td><td><b style="color:var(--jade)">S — 8 Gates Open</b></td><td><input style="width:80px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="5%"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Glow gold? Yes"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Split 10+10%?"></td></tr>
+    <tr><td>🩸 Blood</td><td><b style="color:var(--accent)">S — Gold</b></td><td><input style="width:80px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="5%"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Pink poison? Yes but overdose"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Dosing control"></td></tr>
+    <tr><td>🌊 Dantian</td><td><b style="color:var(--sky)">S — Triple Lakes</b></td><td><input style="width:80px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="5%"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Never empty? Yes but waste"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Alternate engine 0.3s?"></td></tr>
+    <tr><td>👁 Will</td><td><b style="color:var(--violet)">S body — Mastery 5%</b></td><td><input style="width:80px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="5%"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Light eyes? Yes but tumor risk"></td><td><input style="width:140px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Will Rider?"></td></tr>
+  </table>
+  <table><tr><th>Mastery</th><th>%</th><th>Proof Scene</th><th>Twin Gale Unlock (Control)</th></tr>
+    <tr><td>Awaken control</td><td><input style="width:70px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="20%"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Filter mimic success"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Twin1 clean 2cm"></td></tr>
+    <tr><td>Flowing control</td><td><input style="width:70px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="40%"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Wind Tax pause success"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Twin3 12 peels 3 reps"></td></tr>
+    <tr><td>Unleashed brake</td><td><input style="width:70px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="60%"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Fever 1d not 3d"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Twin4 mobile perforation"></td></tr>
+    <tr><td>Willful vessel control</td><td><input style="width:70px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="100%"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Age 0.5yr not 1yr"></td><td><input style="width:180px;background:#0f0d05;border:1px solid var(--line);color:#fff;padding:4px;border-radius:6px" placeholder="Twin Willful 2×/week"></td></tr></table>
+  <h4>Notes / Drama Hooks</h4>
+  <div class="sheet"><div style="grid-column:1/-1"><textarea placeholder="Lv1 complete: born with S body, but mimic overload at 5% makes her copy rival's limp too. Heaven's Eye: at Lv12 loved one poisoned — she *can* save but control 5% means over-purge..."></textarea></div></div>
+</div>
+
+<!-- BUILDS -->
+<div class="card anchor" id="builds">
+  <h2>🎭 9 — 3 Lv1 Complete Builds — Same Body, Different Control</h2>
+  <table>
+    <tr><th>Build (All Lv1 S)</th><th>Concept</th><th>Lv1 Mastery 5% Scene</th><th>Lv30 Mastery 40% Growth</th><th>Lv90 Mastery 100% End</th></tr>
+    <tr><td><b>Seo-Rin Battle Body Lv1C</b></td><td>Born Battle Body for Twin Gale — sync perfect, poison weak</td><td>Twin1 Twin Point sync but 5cm off — body hums, aim misses</td><td>Overdrive pause Tax, Twin3 12 peels clean — poison still -40% before refine mastery</td><td>Willful Vessel 0.5yr Pre-Cut, teaches Twin Gale as Cheonma intended</td></tr>
+    <tr><td><b>Chaos Devour Lv1C</b></td><td>Born Chaos — eat poison/qi, hunger at Lv1 baby</td><td>Drinks poison dilute → pink buff but drinks *too much* → fever (dosing control 5%)</td><td>Learns dosing, Inhale no corruption — hunger controlled via Bodhism</td><td>Eats enemy Twin Non webs to heal — perfect hunger tamed</td></tr>
+    <tr><td><b>Sage Mirror Lv1C</b></td><td>Born Mirror — sees all flaws at Lv1, can't sleep</td><td>Sees Destructive breath hole flaw + Twin Gale perfect path at Lv1 — overwhelmed, copies both → confusion</td><td>Filter mastery 40% — sees flaw but *chooses* which to copy, teaches</td><td>Any art Cheonma-ized — Sage + Perfect + Twin Gale = living monolith</td></tr>
+  </table>
+</div>
+
+<!-- CHEAT SHEET -->
+<div class="card anchor" id="cheatsheet">
+  <h2>📊 10 — Cheat Sheet — Lv1 Complete at a Glance</h2>
+  <table>
+    <tr><th>What</th><th>Lv1 Complete Value</th><th>Controls Mastery</th><th>Heaven's Price at Lv1</th></tr>
+    <tr><td>5 Pillars</td><td>All S — Stage9 perks at Lv1</td><td>Waste 70%→0% as mastery 5%→100%</td><td>Eye every 10Lv tribulation</td></tr>
+    <tr><td>Mimic Mastery</td><td>1 glance copy</td><td>5%: copy flaws too → 40%: filter → 100%: improve</td><td>Overload always on until 20% mastery</td></tr>
+    <tr><td>Heal / Poison</td><td>Scar overnight, poison -60% buff</td><td>5%: overdose, tumor ridge if Will not smooth</td><td>Bleed gold trace 2h</td></tr>
+    <tr><td>Triple Lakes</td><td>Never empty all</td><td>5%: alternate 0.6s → 100%: 0.3s</td><td>Perfect enables spam → Tax +10% harder</td></tr>
+    <tr><td>Unleashed</td><td>20s no Tax +30% sync 1%/cut</td><td>5%: fever 3d → 60%: fever 1d</td><td>Use = Eye notices → next trial harder</td></tr>
+    <tr><td>Willful Vessel</td><td>Body S+ at Lv1, but Will control 5% — can't use</td><td>100% mastery = 0.5yr age cost, 2×/week</td><td>Abandon one desire still needed at 100%</td></tr>
+  </table>
+  <h4>Mastery Milestones vs Body Stages (Old → New)</h4>
+  <table><tr><th>Old Stage (Earned)</th><th>New Mastery (Lv1 Complete)</th><th>Same Perk, New Gate</th></tr><tr><td>Stage4 Flowing Lv28–42</td><td>Mastery 40% ~Lv30</td><td>8 gates open perk at Lv1 body, control at 40% proves it</td></tr><tr><td>Stage5 Flawless Lv42–58</td><td>Mastery 60% ~Lv50</td><td>Gold blood perk at Lv1, dosing control at 60%</td></tr><tr><td>Stage9 Willful Vessel Lv96–100+</td><td>Mastery 100% ~Lv90</td><td>Body S+ at Lv1, Will rider at 100% unlocks 0.5yr cost</td></tr></table>
+</div>
+
+<div class="card anchor" id="glossary">
+  <h2>📚 Appendix — Glossary • Pairing • Source</h2>
+  <table><tr><th>Term</th><th>Lv1 Complete Meaning</th></tr><tr><td>Unique Ability (고유 능력)</td><td>1 per world, soul-bound, cannot learn/copy — Perfect Body is this, not physique</td></tr><tr><td>Lv1 Complete</td><td>Body 100% at Lv1, Mastery 0→100% = story — not body levels</td></tr><tr><td>Mastery vs Stage</td><td>Old: body 0→100% via forging. New: body 100% at Lv1, control 0→100% via Will</td></tr><tr><td>Heaven's Eye</td><td>World notices perfect at Lv1 — tribulations early, every 10Lv</td></tr><tr><td>Waste</td><td>Lv1 perfect wastes 70% qi — engine rich, control poor → gasses despite S lakes</td></tr></table>
+  <p class="muted" style="margin-top:10px">Canon roots: Cheon Ma Heavenly → Evolved Demon Body (36 Cycles, 4-5mo to 7th Heaven, copy glance, spiritual+Bodhism → Willful), Yeo Woon Nano quasi-perfect, Murim 완전체/무신지체/금강불괴 tropes. Unique Ability framing = Solo Leveling / system trope (Unique Passive Divine). Fan synthesis — not affiliated with Naver/WEBTOON.</p>
+  <div class="notice">Pair coding: <code>Perfect Unique #lv1-complete + Twin Gale #twin-5</code> — cite both files. Your Lv1 body *explains* why Twin Gale works at Lv1 where others need Stage4. Mastery % is your leveling — not body.</div>
+</div>
+
+<div class="card" style="text-align:center">
+  <h3 style="color:var(--text)">She wasn't made perfect. She was *left* perfect.</h3>
+  <p class="muted">Body 100% at Lv1 is not reward — it's Heaven's test. The story is not "become perfect" but "learn to carry perfection without breaking the world — or herself."</p>
+  <div style="display:flex;gap:8px;justify-content:center;margin-top:10px;flex-wrap:wrap">
+    <button class="btn primary" onclick="window.print()">🖨️ Print / Save PDF</button>
+    <button class="btn gold" onclick="copyLink()">🔗 Copy Link</button>
+    <button class="btn" onclick="document.getElementById('sheet').scrollIntoView({behavior:'smooth'})">📝 Lv1 Sheet</button>
+  </div>
+  <p class="muted" id="copyMsg" style="margin-top:8px"></p>
+</div>
+
+</article>
+
+<aside>
+  <div class="card" style="padding:12px">
+    <h4 style="margin:0 0 8px">📑 Unique Ability TOC</h4>
+    <div class="toclist" id="toc"></div>
+  </div>
+  <div class="card" style="padding:12px">
+    <h4 style="margin:0 0 8px">◈ Lv1 Complete Card</h4>
+    <div style="background:#0f0d05;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center">
+      <b style="color:var(--accent)">UNIQUE — DIVINE</b><div class="muted">Perfect Martial Body</div>
+      <div style="font-size:11px;color:#fef3c7;margin-top:6px">All S at Lv1<br>Bone S • Meridian S • Blood S<br>Dantian S • Will S (body)</div>
+      <div class="pill gold" style="margin-top:8px">Lv1 Complete</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:6px">Mastery 5% → 100% is leveling<br>Body doesn't grow — control does</div>
+    </div>
+    <p class="muted" style="margin-top:8px">Heaven's Price: Eye every 10Lv — tribulation spawns early.</p>
+  </div>
+  <div class="card" style="padding:12px">
+    <h4 style="margin:0 0 8px">🎮 Copy Template</h4>
+    <div style="background:#0f0d05;border:1px solid var(--line);border-radius:8px;padding:8px;font-size:11px;color:var(--muted);white-space:pre-wrap" id="tpl">UNIQUE ABILITY — Perfect Martial Body — Lv1 Complete
+Pillars: All S (Bone S / Merd S / Blood S / Dan S / Will S body)
+Mastery: 5% → 100% = Lv1→100 story
+Passives: Mimic 1 glance, No deviation <A, Scar overnight, Poison -60% buff, Triple lakes, Resonance
+Price: Eye 10Lv, Overload always on till 20%, Wind Tax +10%, Gold Trace 2h
+Twin Gale: Twin1 *can* at Lv1 but 5cm off — proof not clean till 20% mastery
+Weakness: Body outruns Will — tumor ridge if not smoothed</div>
+    <button class="btn" style="width:100%;margin-top:8px" onclick="navigator.clipboard.writeText(document.getElementById('tpl').innerText);document.getElementById('copyMsg').textContent='✅ Unique template copied!'">📋 Copy Unique Template</button>
+  </div>
+  <div class="card" style="padding:12px">
+    <h4 style="margin:0 0 8px">🔗 Anchors</h4>
+    <div style="font-size:11px;line-height:1.9;color:var(--accent)">
+      #lv1-complete<br>#tree<br>#mastery<br>#price<br>#synergy<br>#sheet<br>#write-op
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  Perfect Martial Body — UNIQUE ABILITY (Lv1 Complete) • Standalone single-file • Divine Unique — cannot learn/copy • Body 100% at Lv1, Mastery 0→100% = story • Heaven's Eye price at Lv1 • Designed as Twin Gale vessel • Synthesizes Cheon Ma 36 Cycles/Evolved Body, Murim 완전체 tropes, system Unique Passive logic • Not affiliated with Naver/WEBTOON.
+</footer>
+
+<script>
+function copyLink(){ navigator.clipboard.writeText(location.href).then(()=> document.getElementById('copyMsg').textContent='✅ Link copied: '+location.href+' — add #lv1-complete etc.'); }
+const toc=document.getElementById('toc');
+document.querySelectorAll('article .card h2').forEach(el=>{
+  if(!el.id) return;
+  const a=document.createElement('a');
+  a.href='#'+el.id;
+  a.textContent=el.textContent.slice(0,52);
+  a.style.fontSize='12px';
+  toc.appendChild(a);
+});
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      document.querySelectorAll('.toclist a').forEach(a=>a.classList.remove('active'));
+      const a=document.querySelector(`.toclist a[href="#${e.target.id}"]`);
+      if(a) a.classList.add('active');
+    }
+  });
+},{rootMargin:'-40% 0px -50% 0px'});
+document.querySelectorAll('.anchor').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
