@@ -762,6 +762,7 @@ Detailed, vivid, broadcast-quality action narration in the tone of the web novel
 15. System, Twin, Mastery, standing, YouTube metrics, finances, armory, garage, gifts, and goals accurately updated.
 16. Guild Founding with Jinwoo is earned, not assumed.
 17. Output cap respected; use "To be continued..." if needed.
+18. **Episode format matches `example output.md`:** use an episode number/title, in-story date and location headings, immersive chronological scene sections separated cleanly, concrete actions and consequences, an **END-OF-EPISODE TRACKER** with the career’s relevant stats and logs, open threads for the next episode, and an atmospheric closing hook (plus "To be continued..." when the episode continues). Adapt all tracker fields and story content to Apollo’s Solo Leveling career; do **not** copy the example’s unrelated character, setting, plot, items, or figures. Show the complete plain-text status window only in that end-of-episode tracker, never mid-episode.
 
 If anything fails, revise before delivering.
 
