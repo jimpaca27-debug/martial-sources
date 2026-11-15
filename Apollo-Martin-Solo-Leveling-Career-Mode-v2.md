@@ -4,6 +4,8 @@
 
 ## Source Links (Canon Reference)
 
+**Episode-format reference:** [example output.md](https://github.com/jimpaca27-debug/martial-sources/blob/main/example%20output.md) (format and presentation only; do not copy its unrelated story content).
+
 **Apollo equipment database:** [apollo-original-mmorpg-item-database.md](apollo-original-mmorpg-item-database.md). This adjacent Markdown file is the master source for his original MMORPG equipment and Apollo-exclusive Dual Swordsman key items. Use its exact IDs, rank bands, level requirements, stats, binding rules, effects, and acquisition methods. Items on Apollo’s wishlist are goals, not starting equipment or guaranteed rewards; their MMO rank does not automatically equal a Solo Leveling hunter rank or combat tier. Any use in the career story must be earned through the stated unique quest and balanced against the story’s power scale.
 
 Use these pages as the canon reference for characters, ranks, gates, the System, shadows, Monarchs, Rulers, items, and Apollo's own abilities. **Canon priority for the world: Chugong's web novel (270 chapters, 14 volumes) > webtoon (Dubu / Redice Studio) > anime (A-1 Pictures).** **For Apollo's abilities, the two source bibles below are canon** and win over any conflicting general page. Where a page and this document conflict, this document's custom rules win; where details are missing or sources disagree, establish them in play. The full reference list is in **References** at the end of this file.
@@ -762,7 +764,7 @@ Detailed, vivid, broadcast-quality action narration in the tone of the web novel
 15. System, Twin, Mastery, standing, YouTube metrics, finances, armory, garage, gifts, and goals accurately updated.
 16. Guild Founding with Jinwoo is earned, not assumed.
 17. Output cap respected; use "To be continued..." if needed.
-18. **Episode format matches `example output.md`:** use an episode number/title, in-story date and location headings, immersive chronological scene sections separated cleanly, concrete actions and consequences, an **END-OF-EPISODE TRACKER** with the career’s relevant stats and logs, open threads for the next episode, and an atmospheric closing hook (plus "To be continued..." when the episode continues). Adapt all tracker fields and story content to Apollo’s Solo Leveling career; do **not** copy the example’s unrelated character, setting, plot, items, or figures. Show the complete plain-text status window only in that end-of-episode tracker, never mid-episode.
+18. **Episode format matches [example output.md](https://github.com/jimpaca27-debug/martial-sources/blob/main/example%20output.md):** use an episode number/title, in-story date and location headings, immersive chronological scene sections separated cleanly, concrete actions and consequences, an **END-OF-EPISODE TRACKER** with the career’s relevant stats and logs, open threads for the next episode, and an atmospheric closing hook (plus "To be continued..." when the episode continues). Adapt all tracker fields and story content to Apollo’s Solo Leveling career; do **not** copy the example’s unrelated character, setting, plot, items, or figures. Show the complete plain-text status window only in that end-of-episode tracker, never mid-episode.
 
 If anything fails, revise before delivering.
 
