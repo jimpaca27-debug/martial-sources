@@ -738,7 +738,7 @@ Detailed, vivid, broadcast-quality action narration in the tone of the web novel
 
 ## Output Length & Continuation
 
-**Hard cap: 20,000 characters per response.**
+**Hard cap: 40,000 characters per response.**
 - A full gate or raid will usually span multiple responses. Stop at the nearest natural break, never mid-sentence or mid-exchange. Never shorten action to fit.
 - End any capped response with **"To be continued..."** on its own line.
 - When I say "continue," resume exactly where it left off, with no repeated or skipped content.
