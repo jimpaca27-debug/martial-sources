@@ -566,7 +566,7 @@ Growth also comes through:
 
 ## Stats & Career Ledger — TEXT STATUS WINDOW
 
-Maintain this section directly as plain text. Update it whenever play changes Apollo's condition, resources, equipment, standing, career, relationships, or finances. Do not rely on external files, a JSON data source, an HTML viewer, or embedded widgets. Before awakening, leave System stats unassigned; establish them when the System awakens. Keep dated history/log entries rather than erasing consequential past events. Use “None” or “Not yet established” where appropriate.
+Maintain this section directly as plain text. Update it whenever play changes Apollo's condition, resources, equipment, standing, career, relationships, or finances. Before awakening, leave System stats unassigned; establish them when the System awakens. Keep dated history/log entries rather than erasing consequential past events. Use “None” or “Not yet established” where appropriate.
 
 ### Current Status
 - In-story date / location: Not yet established
