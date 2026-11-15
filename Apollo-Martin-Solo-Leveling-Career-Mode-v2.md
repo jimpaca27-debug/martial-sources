@@ -564,41 +564,73 @@ Growth also comes through:
 
 ---
 
-## Stats & Career Ledger — LIVE UPDATEABLE STATUS WINDOW
+## Stats & Career Ledger — TEXT STATUS WINDOW
 
-> **This section is now the live Status Window.** It is powered by **`apollo_system.json`** (blank template for Apollo). The LLM updates the JSON — this ledger updates. Nothing else in this file was changed.
+Maintain this section directly as plain text. Update it whenever play changes Apollo's condition, resources, equipment, standing, career, relationships, or finances. Before awakening, leave System stats unassigned; establish them when the System awakens. Keep dated history/log entries rather than erasing consequential past events. Use “None” or “Not yet established” where appropriate.
 
-**Live Viewer:**
-- **Local workspace:** `Apollo_System_Window.html` ↔ `apollo_system.json` (open the HTML preview; it auto-refreshes every 3s)
-- **Public links (host both files together in same GitHub repo folder for any LLM):**
-  - Viewer: `https://jimpaca27-debug.github.io/system-window/Apollo_System_Window.html`
-  - JSON (any LLM can `fetch_page`): `https://jimpaca27-debug.github.io/system-window/apollo_system.json`
+### Current Status
+- In-story date / location: Not yet established
+- Name / nickname: Apollo “Nano” Martin
+- Age: 17 at start; update as time passes
+- Standing: Independent (raid participant only while accepted for a specific raid)
+- Registered Hunter rank: E or D, to be established at registration
+- Effective combat tier: Pre-awakening baseline; update by level thereafter
+- Level / class / title(s): Pre-awakening / None / None
+- HP / condition / injuries: Not yet established
+- STR / AGI / VIT / INT / PER: Unassigned until awakening
+- Available stat points: 0 until established at awakening
+- Titan Strength output: 5× current STR; calculate when stats are assigned
+- Qi / Qi maximum: Unassigned until awakening
+- Will / Will maximum: Unassigned until awakening
+- Cycles / Enlightenment / Agility grade: Unassigned until awakening
+- Wind Tax / Corruption: 0% unless play establishes otherwise
+- Perfect Martial Body Mastery: 5% at Lv1 after awakening; not yet active before trigger
+- Heaven’s Eye: Next forced trial at every 10-level threshold; countdown set at awakening
+- Perfect Body Unleashed uses this arc: 0
+- Nano Blade: 0 uploads; 0 subscribers; no monetization or sponsors
 
-> In this document's rendered HTML version, embed the viewer as: `<iframe src="Apollo_System_Window.html" width="100%" height="900" frameborder="0"></iframe>` — or just keep the markdown link and let the LLM use the JSON as source.
+### Twin Gale & System
+- Current Twin Path arc: Bud (Arc 1), beginning after awakening
+- Twin 1–5: locked until each listed requirement is met; track mastery %, unlocked status, and breathing proficiency separately
+- Twin Non-Existent / Twin Void / Twin Willful: Locked until their requirements are met
+- Daily Quest: Not yet issued; record objectives, completion/failure, rewards, and date
+- Penalty log: None
+- System log: Record each level-up, quest, unlock, stat allocation, reward, penalty, and other System event with an in-story date
+- Skill/formation use log: Record formation, target, result, resource cost, Wind Tax, and any consequences
 
-**How the LLM updates this ledger (edit JSON only, not this markdown):**
+### Inventory & Development
+- Equipped gear: Decent matched pair of swords to be selected/purchased in the opening; record grade, condition, and modifications
+- Other inventory / consumables / keys: None yet; add item, quantity, source, rank, effect, and condition
+- Armory acquired: None yet
+- Armory wishlist: Heaven and Demon matched blades; Kasaka’s Venom Fang; Knight Killer; Baruka’s Dagger; Demon King’s Daggers; Demon King’s Longsword; Kamish’s Wrath
+- Training / mastery drills: None logged; record date, drill, result, progress, and setbacks
+- Vehicles: None owned; every acquired vehicle must be upgraded and have its modifications listed
+- Residence: None owned; luxury residence remains a long-term goal
 
-- `player.level` / `player.rank` / `player.class` / `player.title` / `player.titles[]` — level, rank, class, titles
-- `stats.strength` / `agility` / `vitality` / `intelligence` / `perception` + `stats.availablePoints` — stats (Titan Strength = 5× STR auto-shown)
-- `stats.qi` / `qiMax` / `will` / `willMax` / `cycles` / `enlightenment` / `agilityGrade` / `windTax` / `corruption` — Twin Gale resources
-- `uniqueAbility.mastery` (5%→100%) / `heavensEyeCountdown` / `unleashedUsesThisArc` — Perfect Body control
-- `twinGale.formations.twin1.mastery/unlocked/breathing` … `twin5` / `twinNonExistent` / `twinVoid` / `twinWillful` + `twinGale.currentArc` / `dailyQuest` / `penaltyLog[]` — Twin Gale
-- `inventory.equipped[]` / `items[]` / `keys[]` — gear (starting gear is blank: decent matched pair, set in opening scene)
-- `standing.current` / `standing.history[]` — Independent → Raid Participant → Ally → Co-Founder
-- `rankTracker.registeredRank` / `effectiveTier` / `reTestDates[]` + `gateLedger[]` / `fightLog[]` / `canonTimeline` — career
-- `armoryLog.acquired[]` / `wishlist[]` / `youtubeLog.uploads[]` / `garageLog.owned[]` / `finance.balanceKRW` / `incomeLog[]` / `expenseLog[]` / `giftLog[]` — economy
-- Always update `meta.lastUpdated` (ISO) + `meta.updatedBy` + push `systemLog[]` entry like `"[System] Leveled up! Lv.1 → Lv.2"` on every change.
+### Career & World Record
+- Standing history: Independent → temporary Raid Participant (per accepted raid) → Ally of Jinwoo (earned) → Co-Founder/other role (earned at guild founding)
+- Registered rank / effective tier: Track separately; record Association retests and dates
+- Gate ledger: For every gate, record date, location, rank/type, party, objective, hazards, outcome, survivors/casualties, loot, injuries, payout, and consequences
+- Fight log: Record opponent, location, stakes, tactics/formations, resources spent, injuries, result, and aftermath
+- Canon timeline: Record current arc and important events; note all divergences and their earned causes
+- Training / rivalry / enemy log: Record opponent or trainer, date, outcome, lessons, and ongoing consequences
+- Team & relationship log: Track each person separately; record trust, notable interactions, commitments, and changes without assuming closeness
+- Goals: Track each Career Goal as Wishlist → In Progress → Milestones Reached → Complete; note evidence for each milestone
 
-**Blank JSON is ready:** `apollo_system.json` is blank for Apollo (Lv1, E-rank, 30M KRW, no shadows — Apollo is not Jinwoo, no Shadow Extraction unless earned). Pre-awakening: all stats are `null` until the Double Dungeon trigger — the LLM sets them at awakening.
+### Channel, Gifts & Finances
+- Nano Blade uploads: For each video record concept, filming/editing date, upload date, views, feedback, subscribers gained, and any privacy or Association restrictions
+- Gift log: Recipient, date, item, cost in KRW, occasion, and recipient’s reaction; gifts never buy trust
+- Starting balance: 30,000,000 KRW
+- Current balance: 30,000,000 KRW until the first expense or income is established
+- Income log: Date, source, amount, and allocation
+- Expense log: Date, item/reason, amount, and allocation
+- Gift total: 0 KRW until gifts are given
+- Armory fund / Vehicle fund / Residence fund: Track separately; initial amounts are established through play
+- Monthly living costs / runway: Establish expenses in play; calculate runway from current balance and recurring costs
+- Financial rule: Every amount is in KRW; no unearned income, assumed loot shares, or unexplained purchases
 
-**What this replaces — these trackers are now LIVE in the window (tabs: LEDGER / TWIN GALE / PERFECT BODY / INVENTORY / GATES & FIGHTS / CAREER / LOG):**
-
-- **System Tracker:** Level, STR/AGI/VIT/INT/PER, Titan Strength 5× STR, Qi, Will, Cycles, Enlightenment, Agility grade, Wind Tax/Corruption %, Daily Quest, Penalty log → **LEDGER tab**
-- **Twin Tracker:** mastery % + unlock for Twin 1–5, Twin Non-Existent/Void/Willful, breathing, active Arc → **TWIN GALE tab**
-- **Perfect Martial Body Tracker:** pillars S at Lv1, Mastery 5%→100%, waste %, Heaven's Eye countdown, Unleashed uses, Gold Trace → **PERFECT BODY tab**
-- **Standing / Rank Trackers** → **LEDGER → Standing/Rank + CAREER tab**
-- **Gate Ledger / Fight Log / Canon Timeline / Rival & Enemy / Training / Team & Relationship / Gift Log** → **GATES & FIGHTS + CAREER tabs + gateLedger/fightLog/canonTimeline arrays in JSON**
-- **Armory / YouTube (Nano Blade) / Garage / Financial Ledger & Goals Tracker** → **INVENTORY + CAREER tabs + finance/youtubeLog/garageLog/armoryLog in JSON**
+### Update Protocol
+Track consequential changes as they happen so continuity stays accurate, but do not display, narrate, or append the status window or its update protocol in the middle of an episode. At the end of each episode only, update the relevant current-status fields and append dated entries to the appropriate logs, then present the complete status window as the episode’s final section. Do not show interim status windows during scenes, fights, dialogue, or episode continuations. Keep the ledger consistent with the story: no retroactive changes to locked outcomes, no assumed rewards, and no Jinwoo-exclusive abilities or items for Apollo. If a value is unknown, mark it “Not yet established” rather than inventing a silent default. Before presenting the end-of-episode status window, check level, stats, resources, Mastery, formations, equipment, standing, gate/fight records, relationships, channel metrics, finances, and goals for consistency.
 
 ---
 
