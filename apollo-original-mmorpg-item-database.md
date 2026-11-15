@@ -46870,9 +46870,195 @@ Source / Unique Acquisition: Complete First Dawn, Last Gate, and Stillpoint worl
 
 Lore: An ultimate class honor earned for mastery of two coordinated lines.
 
+## Apollo-Exclusive Key Items — Dual Swordsman
+
+These nine key items are the replacement for Apollo’s former general/canon equipment wishlist. Each is one unique, complete paired-weapon relic for its rank: **1/1 exists across the entire game world**. Each is hard-locked to **Apollo Martin** and the **Dual Swordsman** class, account/soul-bound on acquisition, non-tradable, non-mailable, non-auctionable, non-copyable, and unusable by every other character. They are not starting gear and are not automatically acquired; each requires its listed level and unique class trial. If lost in play, it cannot be looted by another character; recovery must be earned through the relic’s established recovery quest. Stats remain within the rank’s weapon cap; no effect grants extra attacks, actions, guaranteed hits, or a bypass of rank requirements.
+
+### [KEY-DWS-F-001] First Thread Twin Relic — F
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 10
+
+Base Stats: ATK 15 per blade (30 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +3 AGI, +2 SEN
+
+Effect: **First Motion** — once per encounter, after a clean dual-blade deflection, the next hit gains +8% accuracy. Cooldown: once per encounter.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 10; both blades of the pair must be equipped.
+
+Set: First Thread Twin Relic (complete paired set; 2-piece pair bonus active only while both blades are equipped).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 80/80 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique first-form class quest after completing the paired-footwork trial at Lv 10.
+
+Lore: Two light blades bear a single thread of brass between their guards, a reminder that coordination begins before the first strike.
+
+### [KEY-DWS-E-001] Crosswind Twin Relic — E
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 25
+
+Base Stats: ATK 40 per blade (80 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +6 AGI, +4 STR
+
+Effect: **Crosswind Answer** — after changing direction by at least 90 degrees, the next paired hit gains +10% damage. Cooldown: 15 seconds.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 25; both blades required.
+
+Set: Crosswind Twin Relic (complete pair; 2-piece bonus active with both blades equipped).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 120/120 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique E-rank advancement trial: maintain a clean sequence through the Crosswind course.
+
+Lore: The pale edges are etched with two wind-lines that meet only at the point of a controlled crossing.
+
+### [KEY-DWS-D-001] Mirrorwake Twin Relic — D
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 40
+
+Base Stats: ATK 90 per blade (180 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +10 AGI, +7 SEN
+
+Effect: **Mirrorwake Guard** — a successful deflection with either blade grants +5 DEF for 4 seconds; the next strike with the other blade gains +8% accuracy. Cooldown: 18 seconds.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 40; both blades required.
+
+Set: Mirrorwake Twin Relic (complete pair; 2-piece set effect).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 180/180 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique D-rank class trial: deflect and counter the Mirrorwake sentinel without a blade leaving hand.
+
+Lore: Polished steel reflects the wielder’s opposite hand, never the same motion twice.
+
+### [KEY-DWS-C-001] Tempest Weft Twin Relic — C
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 55
+
+Base Stats: ATK 180 per blade (360 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +14 AGI, +10 STR
+
+Effect: **Tempest Weft** — when both blades hit the same target within 1 second, the second hit gains +18% critical chance. Cooldown: 12 seconds; does not grant an extra attack.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 55; both blades required.
+
+Set: Tempest Weft Twin Relic (complete paired set; pair bonus requires both equipped).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 240/240 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique C-rank tempest-gate trial; earned by defeating the course boss using a paired transition.
+
+Lore: Stormglass threads run through both grips, brightening together when the blades’ timing is exact.
+
+### [KEY-DWS-B-001] Crownline Twin Relic — B
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 70
+
+Base Stats: ATK 350 per blade (700 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +20 AGI, +15 SEN
+
+Effect: **Crownline Intercept** — once per encounter, a precise deflection against a non-boss heavy attack reduces its damage by 12% and grants +10% accuracy to the next counter within 3 seconds.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 70; both blades required.
+
+Set: Crownline Twin Relic (complete pair; paired set bonus).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 320/320 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique B-rank Crownline raid trial, awarded only after protecting the marked ally and completing the counter sequence.
+
+Lore: A narrow crown-shaped guard on each blade forms a broken circle, leaving the choice of direction to its bearer.
+
+### [KEY-DWS-A-001] Dawnbreak Twin Relic — A
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 85
+
+Base Stats: ATK 650 per blade (1300 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +28 AGI, +22 VIT
+
+Effect: **Dawnbreak Transition** — after a dodge or deflection, the next hit with the opposite blade gains +22% damage and +12% accuracy. Cooldown: 18 seconds; one trigger per transition.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 85; both blades required.
+
+Set: Dawnbreak Twin Relic (complete paired set; pair bonus active only with both blades).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 450/450 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique A-rank Dawnforge mastery quest; requires the full sequence without a dropped guard.
+
+Lore: The two edges are forged from a single meteor-steel bloom and tempered in opposite halves of the same dawn.
+
+### [KEY-DWS-S-001] Worldroot Counterpoint Twin Relic — S
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 100
+
+Base Stats: ATK 1100 per blade (2200 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +40 AGI, +32 SEN
+
+Effect: **Worldroot Counterpoint** — once per encounter, a successful deflection against a boss or elite attack grants +18 DEF for 6 seconds and makes the next opposite-blade strike ignore 8% DEF. No additional attack is granted.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 100; both blades required.
+
+Set: Worldroot Counterpoint Twin Relic (complete paired set; 2-piece effect).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 650/650 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique S-rank Worldroot trial; the relic is awarded only after the guardian’s final pattern is answered with both blades.
+
+Lore: The worldroot grain in the paired hilts grows in opposite directions, meeting only at the pommel when the set is whole.
+
+### [KEY-DWS-SS-001] Unwritten Axis Twin Relic — SS
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 120
+
+Base Stats: ATK 1800 per blade (3600 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +56 AGI, +44 SEN
+
+Effect: **Unwritten Axis** — once per encounter, after a perfect deflection, choose one: gain +25% accuracy on the next opposite-blade strike, or gain +20 DEF for 5 seconds. Cooldown: once per encounter; the choice is locked until the next encounter.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 120; both blades required.
+
+Set: Unwritten Axis Twin Relic (complete paired set; 2-piece effect).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 900/900 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique SS-rank Axis vault trial; earned by completing both defensive and offensive branches without resetting the encounter.
+
+Lore: Neither blade bears a maker’s mark. Their mirrored surfaces show different paths, both equally deliberate.
+
+### [KEY-DWS-SSS-001] First-and-Last Twin Relic — SSS
+
+Type/Slot: Key weapon / matched paired swords (main hand + off hand) | Class: Dual Swordsman only | Lv Req: 150
+
+Base Stats: ATK 3000 per blade (6000 combined if both strikes hit; each blade is calculated separately)
+
+Bonus Stats: +80 AGI, +64 SEN
+
+Effect: **First-and-Last Measure** — once per encounter, after a perfect deflection, the wielder may set the next opposite-blade strike to gain +35% damage and +25% accuracy, or instead gain +35 DEF for 8 seconds. The choice is exclusive; no extra attack, action, or guaranteed hit.
+
+Requirements: Apollo Martin only; Dual Swordsman; Lv 150; both blades required; complete the First-and-Last class trial.
+
+Set: First-and-Last Twin Relic (complete paired set; 2-piece set-defining effect).
+
+Binding/Durability: **Unique 1/1; Bound to Apollo Martin and Dual Swordsman on acquisition; non-tradable, non-transferable, non-copyable.** Durability: 1200/1200 per blade; repairable only by a qualified paired-relic smith after the relevant rank quest.
+
+Source: Unique SSS-rank final class quest at Stillpoint’s world-end court; one relic pair exists, bound to Apollo on acquisition.
+
+Lore: One blade carries the first line ever drawn in the court; the other, the last. Their edges remain distinct, even when their purposes align.
+
+---
+
 ## Dual Swordsman Expansion Progress — Complete
 
-- Completed: Dual Swordsman ranks F through SSS, all requested categories. Per rank: 5 weapons, 15 full armor sets / 75 pieces, 8 accessories, 8 consumables, 5 cosmetics.
-- Total Dual Swordsman expansion: 9 ranks × 101 items = 909 items.
-- All Dual Swordsman item IDs are unique and rank-constrained.
-- Next batch: None — the Dual Swordsman class line is complete.
+- Completed: Dual Swordsman ranks F through SSS, all requested categories. Per rank: 5 standard weapons, 15 full armor sets / 75 pieces, 8 accessories, 8 consumables, 5 cosmetics; plus 1 Apollo-exclusive key relic per rank.
+- Total Dual Swordsman expansion: 9 ranks × 101 standard items + 9 exclusive key items = 918 items.
+- All item IDs are unique and rank-constrained; each key relic is 1/1 and bound exclusively to Apollo Martin’s Dual Swordsman class.
+- Next batch: None — the class line and key relic series are complete.

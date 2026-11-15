@@ -4,6 +4,8 @@
 
 ## Source Links (Canon Reference)
 
+**Apollo equipment database:** [apollo-original-mmorpg-item-database.md](apollo-original-mmorpg-item-database.md). This adjacent Markdown file is the master source for his original MMORPG equipment and Apollo-exclusive Dual Swordsman key items. Use its exact IDs, rank bands, level requirements, stats, binding rules, effects, and acquisition methods. Items on Apollo’s wishlist are goals, not starting equipment or guaranteed rewards; their MMO rank does not automatically equal a Solo Leveling hunter rank or combat tier. Any use in the career story must be earned through the stated unique quest and balanced against the story’s power scale.
+
 Use these pages as the canon reference for characters, ranks, gates, the System, shadows, Monarchs, Rulers, items, and Apollo's own abilities. **Canon priority for the world: Chugong's web novel (270 chapters, 14 volumes) > webtoon (Dubu / Redice Studio) > anime (A-1 Pictures).** **For Apollo's abilities, the two source bibles below are canon** and win over any conflicting general page. Where a page and this document conflict, this document's custom rules win; where details are missing or sources disagree, establish them in play. The full reference list is in **References** at the end of this file.
 
 **Apollo's ability sources (integrated into this file):**
@@ -315,7 +317,7 @@ Source: https://jimpaca27-debug.github.io/martial-sources/Heavenly_Demon_Divine_
 - **Twin equal thin black blades**, about 15% lighter than a standard blade, with jet edges. Sheathed, they look like one thick blade (a twist-apart scabbard). Drawing makes a single *clang* that becomes a double ring 0.1 seconds apart.
 - **Heaven (right):** straighter; does point and needle work.
 - **Demon (left):** slight curve; does peel and gather work.
-- Apollo does **not** start with this pair. He starts with a decent matched pair he buys (see Armory). The Heaven and Demon pair is a rare-equipment target, with a **breathing hole drilled near the guard** needed for the Twin 3 filter drill.
+- Apollo does **not** start with this pair. He starts with a decent matched pair he buys (see Armory). The Heaven and Demon pair remains a descriptive source-bible reference, not an item on his wishlist; his only named equipment goals are the nine Apollo-exclusive Dual Swordsman key relics in Armory. The breathing-hole detail remains a Twin 3 training requirement for any suitable matched blades.
 
 ### Stat flip
 **WILL > Agility > Qi.** He trades one-shot power for inevitability. **Cannot block:** he must **deflect**; a hard clash triggers a STR check or disarm check. Rivals learn to grapple him.
@@ -456,23 +458,27 @@ Track all goals as Wishlist → In Progress → Milestones Reached → Complete.
 
 ---
 
-## Armory (Rare Equipment Wishlist)
+## Armory — Apollo’s Exclusive Dual Swordsman Key-Item Wishlist
 
-Apollo's taste is **very rare equipment, especially swords.** Items follow the canon rules: they are dungeon drops, System items, or legendary forging, and S-rank artifacts are never bought off a shelf. Tracked as **Wishlist → Acquired → Upgraded**, with notes on source, rank, and effects. Any acquisition is earned or bought through a legitimate, established channel.
+The previous general/canon weapon wishlist is **replaced** by the nine original key-item pairs in [apollo-original-mmorpg-item-database.md](apollo-original-mmorpg-item-database.md). These are the only named equipment goals on Apollo’s Armory wishlist. The canon artifact table later in this career file remains world-reference material only; its items are not part of Apollo’s wishlist.
 
-**Starting gear:** a decent matched pair of swords bought with his budget (grade set in the opening scene). The Heaven and Demon blade pair (see Fighting Style) is a long-term target.
+Apollo still begins with an ordinary matched pair purchased from his 30,000,000 KRW starting budget; no key item is owned at the start. Each key item is a **1/1 world-unique paired weapon**, restricted to **Apollo Martin’s Dual Swordsman class**, non-tradable and non-transferable. Another character cannot acquire, equip, copy, or inherit one. Each rank’s relic requires its exact level, unique class quest, and listed conditions. Acquisition is earned in play and never automatic. The database’s weapon stat cap applies per blade; do not multiply the pair’s combined ATK into extra attacks. MMO rank is not a Solo Leveling hunter rank and does not override the career’s power-tier scale.
 
-**Canon blade wishlist (from the guide):**
-- **Kasaka's Venom Fang (C):** paralysis and bleed.
-- **Knight Killer (B):** +25% damage vs armored targets.
-- **Baruka's Dagger (A):** ice element, +AGI.
-- **Demon King's Daggers (S, twin crimson pair):** a natural dual-wield match; White Flames channeling. Drops from Baran in canon.
-- **Demon King's Longsword (S).**
-- **Kamish's Wrath (S+, National Treasure twin fangs):** forged from the dragon Kamish; canon gift from Thomas Andre to Jinwoo. Obtaining or matching it is a very long-term goal and not guaranteed.
+Track each entry as **Wishlist → In Progress → Acquired → Upgraded**, with its exact database ID, source, rank, condition, and effect. At the start, all nine are Wishlist and none is acquired:
 
-Canon items that Jinwoo earns in canon (for example the Demon King's Daggers) are not automatically unavailable to Apollo, but they are earned, contested, or replaced by emergent outcomes.
+| Rank | Key item (database ID) | Level | Unique signature |
+|---|---|---:|---|
+| F | First Thread Twin Relic (`KEY-DWS-F-001`) | 10 | First Motion: once per encounter, a clean deflection improves the next hit’s accuracy. |
+| E | Crosswind Twin Relic (`KEY-DWS-E-001`) | 25 | Crosswind Answer: a direction change powers the next paired hit. |
+| D | Mirrorwake Twin Relic (`KEY-DWS-D-001`) | 40 | Mirrorwake Guard: deflection improves defense and the opposite-hand counter. |
+| C | Tempest Weft Twin Relic (`KEY-DWS-C-001`) | 55 | Tempest Weft: precise paired hits improve the second strike’s critical chance. |
+| B | Crownline Twin Relic (`KEY-DWS-B-001`) | 70 | Crownline Intercept: a boss/elite heavy-attack deflection supports a guarded counter. |
+| A | Dawnbreak Twin Relic (`KEY-DWS-A-001`) | 85 | Dawnbreak Transition: dodge or deflection empowers the opposite blade. |
+| S | Worldroot Counterpoint Twin Relic (`KEY-DWS-S-001`) | 100 | Worldroot Counterpoint: a boss/elite deflection creates a short defense window and an armor-piercing counter. |
+| SS | Unwritten Axis Twin Relic (`KEY-DWS-SS-001`) | 120 | Unwritten Axis: once per encounter, choose either a precise counter or a defensive response. |
+| SSS | First-and-Last Twin Relic (`KEY-DWS-SSS-001`) | 150 | First-and-Last Measure: once per encounter, choose an empowered counter or a brief defense; no extra action or guaranteed hit. |
 
-Reference: https://gamerant.com/solo-leveling-artifacts-explained/ and https://daddyjim.ai/solo-leveling/item
+All full stats, set effects, repair rules, unique acquisition methods, and flavor text live in the item database and must stay synchronized with this wishlist. No substitutions from the previous canon blade wishlist are assumed.
 
 ---
 
@@ -602,7 +608,7 @@ Maintain this section directly as plain text. Update it whenever play changes Ap
 - Equipped gear: Decent matched pair of swords to be selected/purchased in the opening; record grade, condition, and modifications
 - Other inventory / consumables / keys: None yet; add item, quantity, source, rank, effect, and condition
 - Armory acquired: None yet
-- Armory wishlist: Heaven and Demon matched blades; Kasaka’s Venom Fang; Knight Killer; Baruka’s Dagger; Demon King’s Daggers; Demon King’s Longsword; Kamish’s Wrath
+- Armory wishlist: All nine Apollo-exclusive Dual Swordsman key relics (F–SSS; see Armory table and apollo-original-mmorpg-item-database.md); all Wishlist, none acquired at start
 - Training / mastery drills: None logged; record date, drill, result, progress, and setbacks
 - Vehicles: None owned; every acquired vehicle must be upgraded and have its modifications listed
 - Residence: None owned; luxury residence remains a long-term goal
